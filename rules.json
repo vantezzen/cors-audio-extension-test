@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "header": "Access-Control-Allow-Origin",
+          "operation": "set",
+          "value": "https://yewtu.be"
+        },
+        { "header": "CORS-Modified", "operation": "set", "value": "YES" },
+        { "header": "Cross-Origin-Resource-Policy", "operation": "remove" }
+      ]
+    },
+    "condition": { "urlFilter": "https://*.googlevideo.com/*" }
+  }
+]

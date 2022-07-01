@@ -1,0 +1,26 @@
+{
+  "name": "CORS Audio Extensions Test",
+  "version": "1.0",
+
+  "background": {
+    "scripts": ["cors.js"]
+  },
+
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "https://yewtu.be/*",
+    "https://*.googlevideo.com/*"
+  ],
+
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": ["https://yewtu.be/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "manifest_version": 2
+}
